@@ -1,0 +1,48 @@
+.timeContainer {
+  display: flex;
+  justify-content: center;
+  .timeContent {
+    display: flex;
+    .timeItem {
+      margin: 0 10px;
+      text-align: center;
+      .timeNum {
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        font-weight: 600;
+        line-height: 50px;
+        background-color: #ffb929;
+      }
+    }
+  }
+}
+.text-center {
+  text-align: center;
+}
+.time-box {
+  font-size: 18px;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 25px;
+    left: -150px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+    content: "累计运行";
+    width: 120px;
+    border-top: 1px solid #7b7b7b;
+  }
+  &:after {
+    position: absolute;
+    top: 25px;
+    right: -150px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+    content: "到现在";
+    width: 120px;
+    border-top: 1px solid #7b7b7b;
+  }
+}

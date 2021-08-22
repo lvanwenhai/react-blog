@@ -1,0 +1,39 @@
+.header-box {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+  z-index: 100;
+  transition: all 0.4s;
+  .menu-box {
+    display: none;
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    .menu-box {
+      display: block;
+    }
+  }
+  h3 {
+    color: #c02c38;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+}
+.showHeader {
+  background-color: rgba(255, 255, 255, 0.8);
+  .menu-box {
+    display: block;
+  }
+}
+.search-box {
+  width: 200px;
+  &:hover {
+    border-bottom: 1px solid #c02c38;
+  }
+}

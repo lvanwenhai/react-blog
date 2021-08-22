@@ -1,0 +1,42 @@
+.pages_hoc {
+  height: 100%;
+  margin: 0 auto;
+  .imgBox {
+    width: 280px;
+    margin-bottom: 20px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+.blog-content {
+  background-color: #fff;
+  display: flex;
+  align-items: flex-start;
+}
+.article-content {
+  flex: 1;
+  overflow: hidden;
+  padding: 20px;
+  img {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 80% !important;
+  }
+}
+.article-menu {
+  width: 260px;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 91px;
+  flex-shrink: 0;
+  .menu-item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

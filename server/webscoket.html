@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./socket.io.js"></script>
+  </head>
+  <body>
+    <p id="count"></p>
+	
+	<span class="logoutBtn">退出</sapn>
+   
+
+    <script>
+      
+    //建立连接
+    socket = io.connect('http://localhost:3000');
+    socket.on("stats", function(numClients) {
+        //var curContent = contentNode.html();
+        //contentNode.html(curContent+obj.msg);
+		console.log('当前在线：'+ JSON.stringify(numClients))
+    });
+	// socket.emit("login", {username:'defaultName'}); 
+	
+	// //接收服务端推送的信息
+  //   socket.on("users", function(obj) {
+  //       //var curContent = contentNode.html();
+  //       //contentNode.html(curContent+obj.msg);
+	// 	console.log('当前在线：'+obj.number)
+  //   });
+	
+	
+	// $('.logoutBtn').click(function(){
+	//     socket.emit("logout", {username:'defaultName'});
+	// });
+	
+	
+    </script>
+  </body>
+</html>
