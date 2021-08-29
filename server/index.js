@@ -9,8 +9,8 @@ const webRouter = require("./src/routers/web/index");
 // 引用Server类:
 // const WebSocketServer = WebSocket.Server;
 
-var npm = require('getmac');//获取mac地址
-console.log(npm,npm.default(),'getmacs')
+// var npm = require('getmac');//获取mac地址
+// console.log(npm,npm.default(),'getmacs')
 //获取机器mac地址
 // npm.getMac(function(err,macAddress){
 //     if (err)  throw err;

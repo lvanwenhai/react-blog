@@ -4,6 +4,7 @@ import { MessageOutlined, LikeOutlined, StarOutlined } from "@ant-design/icons";
 import { queryBlogList } from "../../Api/api";
 import { BlogScheme } from "../../types";
 import "./content.less";
+import { url } from "node:inspector";
 
 const IconText = (props: any) => (
   <Space>
@@ -45,8 +46,9 @@ const Content: FC = () => {
     </div>
   ) : null;
   return (
-    <div className="content-list">
+    <div className="content-bg">
       <List
+        className="content-list"
         itemLayout="vertical"
         size="large"
         // loading={loading}

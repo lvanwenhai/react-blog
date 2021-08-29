@@ -1,0 +1,181 @@
+.playIcon {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-size: 28px;
+  z-index: 99;
+  color: #fff !important;
+  cursor: pointer;
+}
+.content {
+  display: block;
+}
+.blogList {
+  display: none;
+}
+.hello-slamdunk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  // font-family: 'Ubuntu',sans-serif;
+  font-size: 80px;
+  // text-transform: uppercase;
+}
+.contact-me {
+  width: 63%;
+  margin: auto;
+  font-size: 16px;
+  color: #eaeadf;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px;
+  margin-top: 22px;
+  letter-spacing: 0;
+  line-height: 30px;
+  border-radius: 10px;
+  box-sizing: initial;
+  white-space: nowrap;
+}
+.double-right {
+  transform: rotate(90deg);
+}
+.arrow-down {
+  position: absolute;
+  right: 50%;
+  bottom: 10px;
+  font-size: 28px;
+  font-weight: 900;
+  transform: translateX(-50%);
+  z-index: 99;
+  color: #fff !important;
+  cursor: pointer;
+  animation: arrowDown 0.8s linear infinite alternate;
+  font-size: 60px;
+}
+@keyframes arrowDown {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transform: translatey(-20%);
+  }
+  20% {
+    visibility: visible;
+    opacity: 0;
+    -webkit-transform: translatey(10%);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translatey(20%);
+  }
+}
+
+body {
+  cursor: url(http://coco727.oss-cn-hongkong.aliyuncs.com/72f6dab2e779d3a075f14a81b6840f95.png),
+    auto;
+}
+.bg-img {
+  // position: relative;
+  width: 100%;
+  height: 100vh;
+  background-position: top center;
+  background-size: cover;
+  background-image: url("../../assets/images/timg.jpeg");
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.showVideo {
+  background-image: url("../../assets/images/dot.gif");
+
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.hideVideo {
+  display: none;
+}
+.App {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.dot {
+  background-image: url("../../assets/images/dot.gif");
+}
+.gezi {
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+
+  background-image: linear-gradient(
+      45deg,
+      #e1deb0 25%,
+      transparent 25%,
+      transparent 75%,
+      #e1deb0 75%,
+      #e1deb0
+    ),
+    linear-gradient(
+      45deg,
+      #e1deb0 26%,
+      transparent 26%,
+      transparent 74%,
+      #e1deb0 74%,
+      #e1deb0
+    );
+  background-image: -webkit-linear-gradient(
+      45deg,
+      #e1deb0 25%,
+      transparent 25%,
+      transparent 75%,
+      #e1deb0 75%,
+      #e1deb0
+    ),
+    -webkit-linear-gradient(45deg, #e1deb0 26%, transparent 26%, transparent 74%, #e1deb0
+          74%, #e1deb0);
+  background-image: -moz-linear-gradient(
+      45deg,
+      #e1deb0 24%,
+      transparent 24%,
+      transparent 76%,
+      #e1deb0 76%,
+      #e1deb0
+    ),
+    -moz-linear-gradient(45deg, #e1deb0 26%, transparent 26%, transparent 74%, #e1deb0
+          74%, #e1deb0);
+  background-image: -o-linear-gradient(
+      45deg,
+      #e1deb0 25%,
+      transparent 25%,
+      transparent 75%,
+      #e1deb0 75%,
+      #e1deb0
+    ),
+    -o-linear-gradient(45deg, #e1deb0 25%, transparent 25%, transparent 75%, #e1deb0
+          75%, #e1deb0);
+  background-size: 4px 4px;
+  background-position: 0 0, 2px 2px;
+}
+.ant-menu {
+  background-color: rgba(255, 255, 255, 0) !important;
+}
+.ant-menu-sub {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .content {
+    display: none;
+  }
+  .blogList {
+    display: block;
+  }
+}
